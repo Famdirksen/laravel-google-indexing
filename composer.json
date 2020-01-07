@@ -1,22 +1,22 @@
 {
-    "name": "spatie/:package_name",
-    "description": ":package_description",
+    "name": "famdirksen/laravel-google-indexing",
+    "description": "Index",
     "keywords": [
-        "spatie",
-        ":package_name"
+        "famdirksen",
+        "laravel-google-indexing"
     ],
-    "homepage": "https://github.com/spatie/:package_name",
+    "homepage": "https://github.com/famdirksen/laravel-google-indexing",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://spatie.be",
+            "name": "Robin Dirksen",
+            "email": "robin@famdirksen.nl",
+            "homepage": "https://famdirksen.nl",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^7.3"
+        "php": "^7.2"
     },
     "require-dev": {
         "symfony/var-dumper": "^4.3",
@@ -24,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src"
+            "Famdirksen\\LaravelGoogleIndexing\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Famdirksen\\LaravelGoogleIndexing\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -42,10 +42,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Famdirksen\\LaravelGoogleIndexing\\SkeletonServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "Skeleton": "Famdirksen\\LaravelGoogleIndexing\\SkeletonFacade"
             }
         }
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Skeleton;
+namespace Famdirksen\LaravelGoogleIndexing;
 
 use Illuminate\Support\Facades\Facade;
 
