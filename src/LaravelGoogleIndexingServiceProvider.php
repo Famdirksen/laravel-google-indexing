@@ -4,7 +4,7 @@ namespace Famdirksen\LaravelGoogleIndexing;
 
 use Illuminate\Support\ServiceProvider;
 
-class SkeletonServiceProvider extends ServiceProvider
+class LaravelGoogleIndexingServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.

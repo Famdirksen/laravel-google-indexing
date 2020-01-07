@@ -2,10 +2,10 @@
 
 namespace Famdirksen\LaravelGoogleIndexing;
 
-class SkeletonClass
+class LaravelGoogleIndexingClass
 {
     /**
-     * Create a new Skeleton Instance.
+     * Create a new LaravelGoogleIndexing Instance.
      */
     public function __construct()
     {

@@ -5,6 +5,8 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/famdirksen/laravel-google-indexing.svg?style=flat-square)](https://scrutinizer-ci.com/g/famdirksen/laravel-google-indexing)
 [![Total Downloads](https://img.shields.io/packagist/dt/famdirksen/laravel-google-indexing.svg?style=flat-square)](https://packagist.org/packages/famdirksen/laravel-google-indexing)
 
+**THIS IS A WORK IN PROGRESS**
+
 Request a page to be indexed by Google using the [Indexing API](https://developers.google.com/search/apis/indexing-api/v3/quickstart).
 
 Please, take a note at the allowed pages that can be index using this API at https://developers.google.com/search/apis/indexing-api/v3/quickstart.
