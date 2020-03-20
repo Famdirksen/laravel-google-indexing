@@ -36,7 +36,7 @@ LaravelGoogleIndexing::create()->update('https://www.my-domain.com')
 
 Delete an URL from the index:
 ```php
-LaravelGoogleIndexing::create()->update('https://www.my-domain.com')
+LaravelGoogleIndexing::create()->delete('https://www.my-domain.com')
 ```
 
 Get the status of an URL:
