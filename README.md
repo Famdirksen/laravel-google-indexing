@@ -1,11 +1,11 @@
-# Index pages in Google using this package
+# Index pages in Google
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/famdirksen/laravel-google-indexing.svg?style=flat-square)](https://packagist.org/packages/famdirksen/laravel-google-indexing)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/famdirksen/laravel-google-indexing/run-tests?label=tests)](https://github.com/famdirksen/laravel-google-indexing/actions?query=workflow%3Arun-tests+branch%3Amaster)
 [![Quality Score](https://img.shields.io/scrutinizer/g/famdirksen/laravel-google-indexing.svg?style=flat-square)](https://scrutinizer-ci.com/g/famdirksen/laravel-google-indexing)
 [![Total Downloads](https://img.shields.io/packagist/dt/famdirksen/laravel-google-indexing.svg?style=flat-square)](https://packagist.org/packages/famdirksen/laravel-google-indexing)
 
-**THIS IS A WORK IN PROGRESS**
+**WORK IN PROGRESS, some functionalities may be changed in the future.**
 
 Request a page to be indexed by Google using the [Indexing API](https://developers.google.com/search/apis/indexing-api/v3/quickstart).
 
@@ -19,17 +19,17 @@ You can install the package via composer:
 composer require famdirksen/laravel-google-indexing
 ```
 
+Next you have to follow the setup instructions from Google, this can be found here [Google Indexing API documentation](https://developers.google.com/search/apis/indexing-api/v3/prereqs).
+
+You need to make a file in your storage direct, but you can override this setting in config with the key `laravel-google-indexing.google.auth_config`.
+
+> Soon we'll publish a blog post on how to setup this package. 
+
 ## Usage
 
 ``` php
 $skeleton = new Famdirksen\LaravelGoogleIndexing();
 echo $skeleton->echoPhrase('Hello, Famdirksen!');
-```
-
-### Testing
-
-``` bash
-composer test
 ```
 
 ### Changelog
