@@ -43,10 +43,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Famdirksen\\LaravelGoogleIndexing\\SkeletonServiceProvider"
+                "Famdirksen\\LaravelGoogleIndexing\\ServiceProvider\\LaravelGoogleIndexingServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Famdirksen\\LaravelGoogleIndexing\\SkeletonFacade"
+                "LaravelGoogleIndexing": "Famdirksen\\LaravelGoogleIndexing\\Facade\\LaravelGoogleIndexingFacade"
             }
         }
     }

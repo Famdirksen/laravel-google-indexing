@@ -6,7 +6,7 @@ use Google_Client;
 use Google_Service_Indexing;
 use Google_Service_Indexing_UrlNotification;
 
-class LaravelGoogleIndexingClass
+class LaravelGoogleIndexing
 {
     /** @var Google_Client $googleClient */
     private $googleClient;
@@ -14,16 +14,22 @@ class LaravelGoogleIndexingClass
     /** @var Google_Service_Indexing $indexingService */
     private $indexingService;
 
-    public function __construct(Google_Client $googleClient)
+    public function __construct()
     {
-        $this->googleClient = $googleClient;
+        $this->googleClient = new Google_Client();
 
-        $this->googleClientSetup();
+        $this->googleClient->setAuthConfig(config('laravel-google-indexing.google.auth_config'));
+
+        foreach(config('laravel-google-indexing.google.scopes', []) as $scope) {
+            $this->googleClient->addScope($scope);
+        }
+
+        $this->indexingService = new Google_Service_Indexing($this->googleClient);
     }
 
-    private function googleClientSetup() {
-        $this->googleClient->setAuthConfig(config('laravel-google-indexing.google.auth_config'));
-        $this->indexingService = new Google_Service_Indexing($this->googleClient);
+    public static function create(): self
+    {
+        return new static();
     }
 
     public function status(string $url) {
@@ -39,7 +45,7 @@ class LaravelGoogleIndexingClass
         return $this->publish($url, "URL_UPDATED");
     }
 
-    public function remove(string $url)
+    public function delete(string $url)
     {
         return $this->publish($url, "URL_DELETED");
     }

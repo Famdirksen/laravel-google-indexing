@@ -27,9 +27,21 @@ You need to make a file in your storage direct, but you can override this settin
 
 ## Usage
 
+> NOTE: this package works only for verified sites in your Google Search Console account
+
+Inform Google about a new or updated URL:
+```php
+LaravelGoogleIndexing::create()->update('https://www.my-domain.com')
+```
+
+Delete an URL from the index:
+```php
+LaravelGoogleIndexing::create()->update('https://www.my-domain.com')
+```
+
+Get the status of an URL:
 ``` php
-$skeleton = new Famdirksen\LaravelGoogleIndexing();
-echo $skeleton->echoPhrase('Hello, Famdirksen!');
+LaravelGoogleIndexing::create()->status('https://www.my-domain.com')
 ```
 
 ### Changelog

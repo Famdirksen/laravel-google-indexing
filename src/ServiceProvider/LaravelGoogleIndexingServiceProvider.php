@@ -1,6 +1,6 @@
 <?php
 
-namespace Famdirksen\LaravelGoogleIndexing;
+namespace Famdirksen\LaravelGoogleIndexing\ServiceProvider;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -13,7 +13,7 @@ class LaravelGoogleIndexingServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('laravel-google-indexing.php'),
+                __DIR__.'/../../config/config.php' => config_path('laravel-google-indexing.php'),
             ], 'config');
         }
     }
@@ -23,6 +23,6 @@ class LaravelGoogleIndexingServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-google-indexing');
+        $this->mergeConfigFrom(__DIR__.'/../../config/config.php', 'laravel-google-indexing');
     }
 }
