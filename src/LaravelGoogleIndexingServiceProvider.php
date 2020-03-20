@@ -15,14 +15,6 @@ class LaravelGoogleIndexingServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__.'/../config/config.php' => config_path('laravel-google-indexing.php'),
             ], 'config');
-
-            /*
-            $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-google-indexing');
-
-            $this->publishes([
-                __DIR__.'/../resources/views' => base_path('resources/views/vendor/laravel-google-indexing'),
-            ], 'views');
-            */
         }
     }
 
