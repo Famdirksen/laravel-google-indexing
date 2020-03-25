@@ -44,6 +44,22 @@ Get the status of an URL:
 LaravelGoogleIndexing::create()->status('https://www.my-domain.com')
 ```
 
+##Or use the Facade
+Inform Google about a new or updated URL:
+```php
+LaravelGoogleIndexing::update('https://www.my-domain.com')
+```
+
+Delete an URL from the index:
+```php
+LaravelGoogleIndexing::delete('https://www.my-domain.com')
+```
+
+Get the status of an URL:
+``` php
+LaravelGoogleIndexing::status('https://www.my-domain.com')
+```
+
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.

@@ -2,6 +2,7 @@
 
 namespace Famdirksen\LaravelGoogleIndexing\ServiceProvider;
 
+use Famdirksen\LaravelGoogleIndexing\LaravelGoogleIndexing;
 use Illuminate\Support\ServiceProvider;
 
 class LaravelGoogleIndexingServiceProvider extends ServiceProvider
@@ -24,5 +25,9 @@ class LaravelGoogleIndexingServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(__DIR__.'/../../config/config.php', 'laravel-google-indexing');
+
+        $this->app->bind('laravel_google_indexing',function(){
+            return new LaravelGoogleIndexing();
+        });
     }
 }

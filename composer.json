@@ -44,7 +44,10 @@
         "laravel": {
             "providers": [
                 "Famdirksen\\LaravelGoogleIndexing\\ServiceProvider\\LaravelGoogleIndexingServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "LaravelGoogleIndexing": "Famdirksen\\LaravelGoogleIndexing\\Facade\\LaravelGoogleIndexingFacade"
+            }
         }
     }
 }
