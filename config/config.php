@@ -7,5 +7,5 @@ return [
         'scopes' => [
             \Google_Service_Indexing::INDEXING,
         ],
-    ]
+    ],
 ];
