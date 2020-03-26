@@ -20,7 +20,6 @@
         "google/apiclient": "^2.0"
     },
     "require-dev": {
-        "symfony/var-dumper": "^4.3",
         "phpunit/phpunit": "^8.2"
     },
     "autoload": {
