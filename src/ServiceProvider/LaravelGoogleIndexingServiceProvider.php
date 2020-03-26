@@ -26,7 +26,7 @@ class LaravelGoogleIndexingServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__.'/../../config/config.php', 'laravel-google-indexing');
 
-        $this->app->bind('laravel_google_indexing',function(){
+        $this->app->bind('laravel_google_indexing', function () {
             return new LaravelGoogleIndexing();
         });
     }
