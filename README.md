@@ -74,7 +74,8 @@ If you discover any security related issues, please email info@famdirksen.nl ins
 
 ## Credits
 
-- [Robin Dirksen](https://github.com/robindirksen1)
+- [Robin Dirksen](https://github.com/robindirksen1) ([personal site](https://robindirksen.nl))
+- [Famdirksen](https://famdirksen.nl)
 - [All Contributors](../../contributors)
 
 ## License
