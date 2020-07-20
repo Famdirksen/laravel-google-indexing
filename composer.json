@@ -1,8 +1,9 @@
 {
     "name": "famdirksen/laravel-google-indexing",
-    "description": "Index",
+    "description": "Index Laravel website in Google via Indexing API",
     "keywords": [
         "famdirksen",
+        "laravel",
         "laravel-google-indexing"
     ],
     "homepage": "https://github.com/famdirksen/laravel-google-indexing",
