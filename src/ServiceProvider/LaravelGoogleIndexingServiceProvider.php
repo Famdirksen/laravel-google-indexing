@@ -2,8 +2,8 @@
 
 namespace Famdirksen\LaravelGoogleIndexing\ServiceProvider;
 
-use Famdirksen\LaravelGoogleIndexing\LaravelGoogleIndexing;
 use Illuminate\Support\ServiceProvider;
+use Famdirksen\LaravelGoogleIndexing\LaravelGoogleIndexing;
 
 class LaravelGoogleIndexingServiceProvider extends ServiceProvider
 {
