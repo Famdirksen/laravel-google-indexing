@@ -44,7 +44,7 @@ Get the status of an URL:
 LaravelGoogleIndexing::create()->status('https://www.my-domain.com')
 ```
 
-##Or use the Facade
+### Or use the Facade
 Inform Google about a new or updated URL:
 ```php
 LaravelGoogleIndexing::update('https://www.my-domain.com')
