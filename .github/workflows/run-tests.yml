@@ -20,8 +20,6 @@ jobs:
                     - laravel: 9.*
                     - laravel: 8.*
                     - laravel: 7.*
-                    - laravel: 6.*
-                    - laravel: 5.8.*
 
         name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }} - ${{ matrix.os }}
 
