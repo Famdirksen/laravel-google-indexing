@@ -62,4 +62,21 @@ class LaravelGoogleIndexing
             ->urlNotifications
             ->publish($urlNotification);
     }
+
+    /**
+     * @param array $urls=[['URL_UPDATED'=>'https://www.site.com'],['URL_DELETED'=>'https://www.site.com/deleted-url']]
+     * @return mixed
+     */
+    public function multiplePublish(array $urls){
+        $batch=$this->indexingService->createBatch();
+        $postBdoy = new Google_Service_Indexing_UrlNotification();
+        foreach ($urls as $key => $url) {
+            $postBdoy->setUrl($key);
+            $postBdoy->setType($url);
+            $batch->add($this->indexingService->urlNotifications->publish($postBdoy));
+        }
+        $results = $batch->execute();
+        return $results;
+        
+    }
 }
