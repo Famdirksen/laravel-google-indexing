@@ -60,6 +60,12 @@ Get the status of an URL:
 LaravelGoogleIndexing::status('https://www.my-domain.com')
 ```
 
+
+for dealing with multiple urls:
+``` php
+LaravelGoogleIndexing::multiplePublish([['URL_UPDATED'=>'https://www.site.com'],['URL_DELETED'=>'https://www.site.com/deleted-url']])
+```
+
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
