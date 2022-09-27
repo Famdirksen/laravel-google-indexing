@@ -71,12 +71,12 @@ class LaravelGoogleIndexing
         $batch=$this->indexingService->createBatch();
         $postBdoy = new Google_Service_Indexing_UrlNotification();
         foreach ($urls as $key => $url) {
-            $postBdoy->setUrl($key);
-            $postBdoy->setType($url);
+            $postBdoy->setUrl($url);
+            $postBdoy->setType($key);
             $batch->add($this->indexingService->urlNotifications->publish($postBdoy));
         }
         $results = $batch->execute();
         return $results;
-        
+
     }
 }
