@@ -56,14 +56,14 @@ LaravelGoogleIndexing::delete('https://www.my-domain.com')
 ```
 
 Get the status of an URL:
-``` php
+```php
 LaravelGoogleIndexing::status('https://www.my-domain.com')
 ```
 
 
-for dealing with multiple urls:
-``` php
-LaravelGoogleIndexing::multiplePublish([['URL_UPDATED'=>'https://www.site.com'],['URL_DELETED'=>'https://www.site.com/deleted-url']])
+For dealing with multiple urls, you can pass an array with multiple updated/deleted urls:
+```php
+LaravelGoogleIndexing::multiplePublish([['URL_UPDATED' => 'https://www.site.com'], ['URL_DELETED' => 'https://www.site.com/deleted-url']])
 ```
 
 ### Changelog
